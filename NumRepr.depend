@@ -1,0 +1,291 @@
+# depslib dependency file v1.0
+1671095636 source:c:\users\julian\dropbox\github\numericrepresentations\src\pruebas_dig_t.cpp
+	"nat_reg_digs_t.hpp"
+	<typeinfo>
+
+1670611752 c:\users\julian\dropbox\github\numericrepresentations\src\dig_t.hpp
+	"auxiliary_functions.hpp"
+	"auxiliary_types.hpp"
+	"lexer_parser.hpp"
+
+1668675412 c:\users\julian\dropbox\github\numericrepresentations\src\tipos_auxiliares.hpp
+	"tipos_basicos.hpp"
+
+1668675583 c:\users\julian\dropbox\github\numericrepresentations\src\tipos_basicos.hpp
+	<cstdint>
+	<type_traits>
+	<optional>
+	<compare>
+	<concepts>
+	<istream>
+	<ostream>
+	<iostream>
+	<cstring>
+	<string>
+	<sstream>
+	<fstream>
+	<array>
+	<vector>
+	<list>
+	<map>
+	<climits>
+	<numeric>
+	<limits>
+	<cmath>
+	<iterator>
+	<functional>
+
+1668675582 c:\users\julian\dropbox\github\numericrepresentations\src\funciones_auxiliares.hpp
+	"tipos_auxiliares.hpp"
+
+1672516747 source:c:\users\julia\dropbox\github\numericrepresentations\src\pruebas_dig_t.cpp
+	"utilities.hpp"
+	"nat_reg_digs_t.hpp"
+	<typeinfo>
+
+1671630569 c:\users\julia\dropbox\github\numericrepresentations\src\dig_t.hpp
+	"auxiliary_functions.hpp"
+	"auxiliary_types.hpp"
+	"lexer_parser.hpp"
+
+1668745298 c:\users\julia\dropbox\github\numericrepresentations\src\tipos_auxiliares.hpp
+	"tipos_basicos.hpp"
+
+1668750224 c:\users\julia\dropbox\github\numericrepresentations\src\tipos_basicos.hpp
+	<cstdint>
+	<type_traits>
+	<optional>
+	<compare>
+	<concepts>
+	<istream>
+	<ostream>
+	<iostream>
+	<cstring>
+	<string>
+	<sstream>
+	<fstream>
+	<array>
+	<vector>
+	<list>
+	<map>
+	<climits>
+	<numeric>
+	<limits>
+	<cmath>
+	<iterator>
+	<functional>
+
+1668745867 c:\users\julia\dropbox\github\numericrepresentations\src\funciones_auxiliares.hpp
+	"tipos_auxiliares.hpp"
+
+1671181051 c:\users\julia\dropbox\github\numericrepresentations\src\auxiliary_functions.hpp
+	"auxiliary_types.hpp"
+
+1670420372 c:\users\julia\dropbox\github\numericrepresentations\src\auxiliary_types.hpp
+	"basic_types.hpp"
+
+1671024746 c:\users\julia\dropbox\github\numericrepresentations\src\basic_types.hpp
+	"istream"
+	<cinttypes>
+	<type_traits>
+	<optional>
+	<compare>
+	<concepts>
+	<iostream>
+	<cstring>
+	<string>
+	<sstream>
+	<fstream>
+	<array>
+	<vector>
+	<list>
+	<map>
+	<climits>
+	<numeric>
+	<limits>
+	<cmath>
+	<iterator>
+	<functional>
+
+1671181051 c:\users\julian\dropbox\github\numericrepresentations\src\auxiliary_functions.hpp
+	"auxiliary_types.hpp"
+
+1669382496 c:\users\julian\dropbox\github\numericrepresentations\src\auxiliary_types.hpp
+	"basic_types.hpp"
+
+1671024746 c:\users\julian\dropbox\github\numericrepresentations\src\basic_types.hpp
+	"istream"
+	<cinttypes>
+	<type_traits>
+	<optional>
+	<compare>
+	<concepts>
+	<iostream>
+	<cstring>
+	<string>
+	<sstream>
+	<fstream>
+	<array>
+	<vector>
+	<list>
+	<map>
+	<climits>
+	<numeric>
+	<limits>
+	<cmath>
+	<iterator>
+	<functional>
+
+1672702029 c:\users\julia\dropbox\github\numericrepresentations\src\reg_digs_t.hpp
+	"dig_t.hpp"
+	"utilities.hpp"
+	"lexer_parser.hpp"
+
+1672516542 c:\users\julia\dropbox\github\numericrepresentations\src\utilities.hpp
+	<tuple>
+	<array>
+	"basic_types.hpp"
+
+1671536116 c:\users\julia\dropbox\github\numericrepresentations\src\lexer_parser.hpp
+	"auxiliary_types.hpp"
+
+1671535901 c:\users\julian\dropbox\github\numericrepresentations\src\reg_digs_t.hpp
+	"dig_t.hpp"
+	"utilities.hpp"
+	"lexer_parser.hpp"
+
+1671536116 c:\users\julian\dropbox\github\numericrepresentations\src\lexer_parser.hpp
+	"auxiliary_types.hpp"
+
+1670006791 c:\users\julian\dropbox\github\numericrepresentations\src\utilities.hpp
+	<tuple>
+	<array>
+	"basic_types.hpp"
+
+1671538025 c:\users\julia\dropbox\github\numericrepresentations\src\nat_reg_digs_t.hpp
+	"reg_digs_t.hpp"
+	"utilities.hpp"
+
+1671533023 c:\users\julian\dropbox\github\numericrepresentations\src\nat_reg_digs_t.hpp
+	"reg_digs_t.hpp"
+	"utilities.hpp"
+
+1688923927 source:c:\users\julia\dropbox\github\numericrepresentations\src\memory_handler.cpp
+	"C:\\Users\\julia\\Dropbox\\GitHub\\NumericRepresentations\\include\\memory_handler.hpp"
+	<variant>
+	<utility>
+	<ostream>
+	<string>
+
+1689012615 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\memory_handler.hpp
+	"digit_variant_t.hpp"
+	<variant>
+	<string>
+	<ostream>
+	<map>
+	<set>
+
+1689765519 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\digit_variant_t.hpp
+	<variant>
+	<cassert>
+	<cctype>
+	<charconv>
+	<concepts>
+	<cstdint>
+	<iostream>
+	<string>
+	<limits>
+	<algorithm>
+	"dig_t.hpp"
+
+1689776227 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\dig_t.hpp
+	"auxiliary_functions.hpp"
+
+1682941389 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\auxiliary_functions.hpp
+	"auxiliary_types.hpp"
+
+1681464992 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\auxiliary_types.hpp
+	"basic_types.hpp"
+
+1689765519 c:\\users\\julia\\dropbox\\github\\numericrepresentations\\include\\basic_types.hpp
+	<cinttypes>
+	<compare>
+	<concepts>
+	<optional>
+	<type_traits>
+	<cstring>
+	<fstream>
+	<iostream>
+	<istream>
+	<sstream>
+	<string>
+	<array>
+	<list>
+	<map>
+	<vector>
+	<climits>
+	<cmath>
+	<limits>
+	<numeric>
+	<functional>
+	<iterator>
+
+1683133416 source:c:\users\julia\dropbox\github\numericrepresentations\src\test_driver.cpp
+	"../include/testunit.hpp"
+	<clocale>
+	<windows.h>
+
+1682595700 c:\users\julia\dropbox\github\numericrepresentations\include\testunit.hpp
+	"int_reg_digs_t.hpp"
+	"utilities.hpp"
+
+1682940544 c:\users\julia\dropbox\github\numericrepresentations\include\int_reg_digs_t.hpp
+	"nat_reg_digs_t.hpp"
+	<istream>
+	<ostream>
+
+1683132914 c:\users\julia\dropbox\github\numericrepresentations\include\nat_reg_digs_t.hpp
+	"reg_digs_t.hpp"
+	"utilities.hpp"
+
+1683130631 c:\users\julia\dropbox\github\numericrepresentations\include\reg_digs_t.hpp
+	"dig_t.hpp"
+	"utilities.hpp"
+
+1689776227 c:\users\julia\dropbox\github\numericrepresentations\include\dig_t.hpp
+	"auxiliary_functions.hpp"
+
+1682941389 c:\users\julia\dropbox\github\numericrepresentations\include\auxiliary_functions.hpp
+	"auxiliary_types.hpp"
+
+1681464992 c:\users\julia\dropbox\github\numericrepresentations\include\auxiliary_types.hpp
+	"basic_types.hpp"
+
+1689765519 c:\users\julia\dropbox\github\numericrepresentations\include\basic_types.hpp
+	<cinttypes>
+	<compare>
+	<concepts>
+	<optional>
+	<type_traits>
+	<cstring>
+	<fstream>
+	<iostream>
+	<istream>
+	<sstream>
+	<string>
+	<array>
+	<list>
+	<map>
+	<vector>
+	<climits>
+	<cmath>
+	<limits>
+	<numeric>
+	<functional>
+	<iterator>
+
+1689404676 c:\users\julia\dropbox\github\numericrepresentations\include\utilities.hpp
+	"basic_types.hpp"
+	<array>
+	<tuple>
+

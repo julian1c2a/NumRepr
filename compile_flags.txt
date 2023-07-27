@@ -1,0 +1,11 @@
+-IC:\Users\julia\Dropbox\GitHub\NumericRepresentations
+-IC:\msys64\mingw64\include
+-IC:\msys64\mingw64\include\c++
+-IC:\msys64\mingw64\include\c++\12.2.0
+-IC:\msys64\mingw64\include\c++\12.2.0\backwards
+-IC:\msys64\mingw64\include\c++\12.2.0\x86_64-w64-mingw32
+-IC:\msys64\mingw64\include\fmt
+-IC:\msys64\mingw64\include\boost
+-IC:\msys64\mingw64\include\eigen3
+-IC:\msys64\mingw64\include\eigen3\eigen
+-std=gnu++23

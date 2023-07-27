@@ -1,0 +1,6 @@
+﻿build-GUI-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/*
+build-GUI-Desktop_Qt_6_5_0_MinGW_64_bit-Release/*
+build-GUI-msys2_mingw64_GCC-Debug/*
+build-GUI-msys2_mingw64_GCC-Profile/*
+build-GUI-msys2_mingw64_GCC-Release/*
+obj/*

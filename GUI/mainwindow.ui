@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1930</width>
+    <height>1069</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_modulo">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>470</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_producto_con_asinacion">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>*=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_orwise_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>|=</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_Informacion_Adicional">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>810</y>
+      <width>1651</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:17.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;TIPO                            BASE       LONG       LONG     VALOR         &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;O                                                 PARTE      PARTE&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PLANTILLA                                 ENTERA  FRACC&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;DE TIPO&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;unsinged long long -------       -------       -------    numero     tipo C++ built-in&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;long long                  -------       -------       -------    numero     tipo C++ built-in &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;long double              -------       -------      -------     numero    tipo C++ built-in&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;dig_t                          2 - 65        -------      -------     numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;reg_digs_t                 2 - 65        1 - 32       -------     numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;nat_reg_t                   2 - 65        1 - 32       -------     numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;int_reg_t                    2 - 65        1 - 32       -------     numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;rat_nat_t                    2 - 65        1 - 32       1 - 32      numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;rat_int_t                     2 - 65        1 - 32       1 - 32      numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;natural_t                    2 - 65        ------       ------       numero    librería NumRepr&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;integer_t                    2 - 65        ------       ------       numero    librería NumRepr&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cociente_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_resta">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>470</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_suma">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>470</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_Bm1_op">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>650</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>~(unario)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_informacion_Adicional">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>780</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Información Adicional</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_Bm1_modifica">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>650</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mC_Bm1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_igual">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>==</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_resta_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_no_igual">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>!=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_spaceship">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;=&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_andwise">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>590</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;&amp;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_despl_left2right">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_producto">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>470</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mayor_igual">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_orwise">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_despl_right2left">
+    <property name="geometry">
+     <rect>
+      <x>1410</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menor_igual">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cociente">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>470</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_base_modifica">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>650</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mC_B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mayor">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_xorwise">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_despl_right2left_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_modulo_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_Bm1">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>710</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C_Bm1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_base">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>710</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C_B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_despl_left2right_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_menor">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>530</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_compl_base_op">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>710</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-(unario)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_andwise_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>590</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;&amp;=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_suma_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>410</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_xorwise_con_asignacion">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>590</y>
+      <width>125</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>^=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Base">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>50</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Base numérica &gt; 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_valor_resultado">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>280</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ValorDelResultado</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_asignacion_1">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>96</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>     :=</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_valor_2">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>190</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nombre_in_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>113</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_plantilla_1">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>long long</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>unsigned long long</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>long double</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dígito</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>registro de digitos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>natural de longitud fija</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>entero de longitud fija</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>racional natural de longitudes fijas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>racional entero de longitudes fijas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>natural de longitud ilimitada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string extracomment="del namespace NumRepr">entero de longitud ilimitada</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_base_resultado">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>280</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BaseNuméricaDelResultado</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nombre_in_1">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>111</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_longitud_PE_1">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>100</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_plantilla">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>50</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tipo o plantilla de tipo</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Base_2">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>190</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_longitud_PE_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>190</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_asignacion_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>190</y>
+      <width>96</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>     :=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_operacion">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>350</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operaciones</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_variable_1_preparada">
+    <property name="geometry">
+     <rect>
+      <x>1650</x>
+      <y>100</y>
+      <width>181</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>variable 1 prep</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_longPF_resultado">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>280</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LongPFDelResultado</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_variable_2_preparada">
+    <property name="geometry">
+     <rect>
+      <x>1650</x>
+      <y>190</y>
+      <width>171</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>variable 2 prep</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_asignacion_3">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>280</y>
+      <width>96</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>     :=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_nombre">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre de Variable</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_longitud_PF_1">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>100</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_plantilla_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>190</y>
+      <width>401</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>long long</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>unsigned long long</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>long double</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dígito</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>registro de digitos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>natural de longitud fija</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>entero de longitud fija</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>racional natural de longitudes fijas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>racional entero de longitudes fijas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>natural de longitud ilimitada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string extracomment="del namespace NumRepr">entero de longitud ilimitada</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_Valor">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>50</y>
+      <width>96</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Valor</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_plantilla_resultado">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>280</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PlantillaDelResultado</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_longPE_resultado">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>280</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LongPEDelResultado</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nombre_in_result">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>280</y>
+      <width>113</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_longitud_PF_2">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>190</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_valor_1">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>100</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_longitud_PE">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>50</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Longitud Parte Entera</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_longitud_PF">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>50</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Longitud Parte Fraccion</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Base_1">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>100</y>
+      <width>113</width>
+      <height>39</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_variable_result">
+    <property name="geometry">
+     <rect>
+      <x>1662</x>
+      <y>280</y>
+      <width>151</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>variable R prep</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1930</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCalculator_for_NumericRepresentations_library">
+    <property name="title">
+     <string>Calculator for NumericRepresentations library</string>
+    </property>
+   </widget>
+   <addaction name="menuCalculator_for_NumericRepresentations_library"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

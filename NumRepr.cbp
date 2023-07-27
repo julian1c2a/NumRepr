@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NumericRepresentations" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/NumericRepresentations" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-std=gnu++23 -fconcepts-diagnostics-depth=512 -fconstexpr-loop-limit=100000000" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/NumericRepresentations" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-std=gnu++23 -fconcepts-diagnostics-depth=512 -fconstexpr-loop-limit=100000000" />
+				</Compiler>
+				<Linker>
+					<Add option="-O2" />
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/auxiliary_functions.hpp" />
+		<Unit filename="include/auxiliary_types.hpp" />
+		<Unit filename="include/base_num_t.hpp" />
+		<Unit filename="include/basic_types.hpp" />
+		<Unit filename="include/dig_t.hpp" />
+		<Unit filename="include/digit_variant_t.hpp" />
+		<Unit filename="include/first_varlist_t.hpp" />
+		<Unit filename="include/memory_handler.hpp" />
+		<Unit filename="include/util_functs.hpp" />
+		<Unit filename="include/utilities.hpp" />
+		<Unit filename="src/digit_variant_t.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/memory_handler.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="" main="" init_handlers="necessary" language="CPP" />
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

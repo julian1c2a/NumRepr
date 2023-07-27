@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.9" />
+    <errors>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." verbose="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="61" column="7" />
+            <symbol>resbinop_t::no_div_by_0</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." verbose="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="67" column="7" />
+            <symbol>resbinop_t::no_div_by_0</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." verbose="struct member &apos;resbinop_t::no_div_by_0&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="73" column="7" />
+            <symbol>resbinop_t::no_div_by_0</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_low&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_low&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="83" column="20" />
+            <symbol>result_operation_t::result_content_low</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="85" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_low&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_low&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="91" column="20" />
+            <symbol>result_operation_t::result_content_low</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="93" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_low&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_low&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="99" column="20" />
+            <symbol>result_operation_t::result_content_low</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_high&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_high&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="100" column="20" />
+            <symbol>result_operation_t::result_content_high</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="101" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_quotient&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_quotient&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="107" column="20" />
+            <symbol>result_operation_t::result_content_quotient</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_remainder&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_remainder&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="108" column="20" />
+            <symbol>result_operation_t::result_content_remainder</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="109" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_quotient&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_quotient&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="115" column="20" />
+            <symbol>result_operation_t::result_content_quotient</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="116" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::result_content_remainder&apos; is never used." verbose="struct member &apos;result_operation_t::result_content_remainder&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="122" column="20" />
+            <symbol>result_operation_t::result_content_remainder</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;result_operation_t::good_result&apos; is never used." verbose="struct member &apos;result_operation_t::good_result&apos; is never used." cwe="563" file0="src/auxiliary_types.hpp">
+            <location file="src\auxiliary_types.hpp" line="123" column="14" />
+            <symbol>result_operation_t::good_result</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;(&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;(&apos;. Configuration: &apos;&apos;." file0="src/base_num_t.hpp">
+            <location file="src\int_reg_digs_t.hpp" line="312" column="22" />
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;dig_t&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;dig_t&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/dig_t.hpp">
+            <location file="src\dig_t.hpp" line="277" column="19" />
+            <symbol>dig_t</symbol>
+        </error>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical disjunction always evaluates to true: c != &apos; &apos; || c != &apos;\0&apos;." verbose="Logical disjunction always evaluates to true: c != &apos; &apos; || c != &apos;\0&apos;. Are these conditions necessary? Did you intend to use &amp;&amp; instead? Are the numbers correct? Are you comparing the correct variables?" cwe="571" file0="src/dig_t.hpp">
+            <location file="src\dig_t.hpp" line="1271" column="26" />
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;c&apos; can be reduced." verbose="The scope of the variable &apos;c&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="src/dig_t.hpp">
+            <location file="src\dig_t.hpp" line="1220" column="7" />
+            <symbol>c</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;cthis&apos; can be declared as reference to const" verbose="Variable &apos;cthis&apos; can be declared as reference to const" cwe="398" file0="src/dig_t.hpp">
+            <location file="src\dig_t.hpp" line="325" column="10" info="Variable &apos;cthis&apos; can be declared as reference to const" />
+            <symbol>cthis</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;func_refvar_t::matd&apos; is not initialized in the constructor." verbose="Member variable &apos;func_refvar_t::matd&apos; is not initialized in the constructor." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="461" column="2" />
+            <symbol>func_refvar_t::matd</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;cp_new::contruye_lista_de_listas_de_variables&apos;" verbose="Unused private function: &apos;cp_new::contruye_lista_de_listas_de_variables&apos;" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="31" column="14" />
+            <symbol>cp_new::contruye_lista_de_listas_de_variables</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;func_refvar_t::escribe_var&apos;" verbose="Unused private function: &apos;func_refvar_t::escribe_var&apos;" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="240" column="7" />
+            <symbol>func_refvar_t::escribe_var</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;func_refvar_t::escribe_var&apos;" verbose="Unused private function: &apos;func_refvar_t::escribe_var&apos;" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="363" column="7" />
+            <symbol>func_refvar_t::escribe_var</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;func_refvar_t::escribe_var&apos;" verbose="Unused private function: &apos;func_refvar_t::escribe_var&apos;" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="484" column="7" />
+            <symbol>func_refvar_t::escribe_var</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;se_puede_insertar&apos; is always true" verbose="Condition &apos;se_puede_insertar&apos; is always true" cwe="571" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="248" column="8" info="Condition &apos;se_puede_insertar&apos; is always true" />
+            <location file="src\memory_handler.hpp" line="244" column="11" info="Assuming that condition &apos;!se_puede_insertar&apos; is not redundant" />
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;se_puede_insertar&apos; is always true" verbose="Condition &apos;se_puede_insertar&apos; is always true" cwe="571" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="371" column="8" info="Condition &apos;se_puede_insertar&apos; is always true" />
+            <location file="src\memory_handler.hpp" line="367" column="11" info="Assuming that condition &apos;!se_puede_insertar&apos; is not redundant" />
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;se_puede_insertar&apos; is always true" verbose="Condition &apos;se_puede_insertar&apos; is always true" cwe="571" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="492" column="8" info="Condition &apos;se_puede_insertar&apos; is always true" />
+            <location file="src\memory_handler.hpp" line="488" column="11" info="Assuming that condition &apos;!se_puede_insertar&apos; is not redundant" />
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;var_base&apos; shadows outer argument" verbose="Local variable &apos;var_base&apos; shadows outer argument" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="243" column="9" info="Shadow variable" />
+            <location file="src\memory_handler.hpp" line="240" column="57" info="Shadowed declaration" />
+            <symbol>var_base</symbol>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;var_base&apos; shadows outer argument" verbose="Local variable &apos;var_base&apos; shadows outer argument" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="366" column="9" info="Shadow variable" />
+            <location file="src\memory_handler.hpp" line="363" column="57" info="Shadowed declaration" />
+            <symbol>var_base</symbol>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;var_base&apos; shadows outer argument" verbose="Local variable &apos;var_base&apos; shadows outer argument" cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="487" column="9" info="Shadow variable" />
+            <location file="src\memory_handler.hpp" line="484" column="57" info="Shadowed declaration" />
+            <symbol>var_base</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="240" column="27" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="254" column="25" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="277" column="47" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="363" column="27" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="377" column="25" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="400" column="47" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;lhs&apos; should be passed by const reference." verbose="Parameter &apos;lhs&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="416" column="39" />
+            <symbol>lhs</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="484" column="27" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="498" column="25" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nombre&apos; should be passed by const reference." verbose="Parameter &apos;nombre&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="521" column="47" />
+            <symbol>nombre</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;lhs&apos; should be passed by const reference." verbose="Parameter &apos;lhs&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="src/memory_handler.hpp">
+            <location file="src\memory_handler.hpp" line="539" column="39" />
+            <symbol>lhs</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="src/nat_reg_digs_t.hpp">
+            <location file="src\nat_reg_digs_t.hpp" line="1314" column="4" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\utilities.hpp" line="45" column="21" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\utilities.hpp" line="119" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="73" column="29" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="76" column="25" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="359" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="535" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="965" column="31" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="978" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="989" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1000" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1006" column="36" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1014" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1082" column="21" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1089" column="21" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1157" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1188" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1195" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1210" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1233" column="20" />
+        </error>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="1249" column="20" />
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="381" column="2" />
+            <symbol>reg_digs_t</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="384" column="2" />
+            <symbol>reg_digs_t</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="457" column="2" />
+            <symbol>reg_digs_t</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;reg_digs_t&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="465" column="2" />
+            <symbol>reg_digs_t</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;dig_t &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; , static_cast &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; &gt; ( B ) &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;dig_t &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; , static_cast &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; &gt; ( B ) &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\dig_t.hpp" line="277" column="19" />
+            <symbol>dig_t &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; , static_cast &lt; type_traits :: TypeFromIntNumber_t &lt; B &gt; &gt; ( B ) &gt;</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;cthis&apos; can be declared as reference to const" verbose="Variable &apos;cthis&apos; can be declared as reference to const" cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="68" column="8" info="Variable &apos;cthis&apos; can be declared as reference to const" />
+            <symbol>cthis</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::generate algorithm instead of a raw loop." verbose="Consider using std::generate algorithm instead of a raw loop." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="151" column="8" />
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="src/pruebas_dig_t.cpp">
+            <location file="src\reg_digs_t.hpp" line="776" column="0" />
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 571." verbose="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 571." cwe="369" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="571" column="9" info="Division by zero" />
+            <location file="src\test_dig_t.hpp" line="567" column="15" info="Assuming that condition &apos;nnd&lt;0&apos; is not redundant" />
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 624." verbose="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 624." cwe="369" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="624" column="9" info="Division by zero" />
+            <location file="src\test_dig_t.hpp" line="619" column="15" info="Assuming that condition &apos;nnd&lt;0&apos; is not redundant" />
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 681." verbose="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 681." cwe="369" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="681" column="9" info="Division by zero" />
+            <location file="src\test_dig_t.hpp" line="677" column="15" info="Assuming that condition &apos;nnd&lt;0&apos; is not redundant" />
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 734." verbose="Either the condition &apos;nnd&lt;0&apos; is redundant or there is division by zero at line 734." cwe="369" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="734" column="9" info="Division by zero" />
+            <location file="src\test_dig_t.hpp" line="729" column="15" info="Assuming that condition &apos;nnd&lt;0&apos; is not redundant" />
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;A&apos;." verbose="Access of moved variable &apos;A&apos;." cwe="672" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="94" column="16" info="Access of moved variable &apos;A&apos;." />
+            <location file="src\test_dig_t.hpp" line="92" column="25" info="Calling std::move(A)" />
+            <symbol>A</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;A&apos;." verbose="Access of moved variable &apos;A&apos;." cwe="672" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="101" column="16" info="Access of moved variable &apos;A&apos;." />
+            <location file="src\test_dig_t.hpp" line="99" column="25" info="Calling std::move(A)" />
+            <symbol>A</symbol>
+        </error>
+        <error id="accessMoved" severity="warning" msg="Access of moved variable &apos;A&apos;." verbose="Access of moved variable &apos;A&apos;." cwe="672" file0="src/test_dig_t.hpp">
+            <location file="src\test_dig_t.hpp" line="107" column="16" info="Access of moved variable &apos;A&apos;." />
+            <location file="src\test_dig_t.hpp" line="105" column="25" info="Calling std::move(A)" />
+            <symbol>A</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;for_each_same_type::are_same_type_v&apos; is never used." verbose="struct member &apos;for_each_same_type::are_same_type_v&apos; is never used." cwe="563" file0="src/utilities.hpp">
+            <location file="src\utilities.hpp" line="85" column="24" />
+            <symbol>for_each_same_type::are_same_type_v</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Char2Sign&apos; is never used." verbose="The function &apos;Char2Sign&apos; is never used." cwe="561">
+            <location file="src\auxiliary_functions.hpp" line="9" column="0" />
+            <symbol>Char2Sign</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;atoull&apos; is never used." verbose="The function &apos;atoull&apos; is never used." cwe="561">
+            <location file="src\basic_types.hpp" line="130" column="0" />
+            <symbol>atoull</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;borra_var&apos; is never used." verbose="The function &apos;borra_var&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="254" column="0" />
+            <symbol>borra_var</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;contruye_lista_de_listas_de_variables&apos; is never used." verbose="The function &apos;contruye_lista_de_listas_de_variables&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="31" column="0" />
+            <symbol>contruye_lista_de_listas_de_variables</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cpy_data&apos; is never used." verbose="The function &apos;cpy_data&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="668" column="0" />
+            <symbol>cpy_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;destruye_matriz_de_variables &lt; long long , long long &gt;&apos; is never used." verbose="The function &apos;destruye_matriz_de_variables &lt; long long , long long &gt;&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="158" column="0" />
+            <symbol>destruye_matriz_de_variables &lt; long long , long long &gt;</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;destruye_matriz_de_variables &lt; unsigned long long , unsigned long long &gt;&apos; is never used." verbose="The function &apos;destruye_matriz_de_variables &lt; unsigned long long , unsigned long long &gt;&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="174" column="0" />
+            <symbol>destruye_matriz_de_variables &lt; unsigned long long , unsigned long long &gt;</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;escribe_var&apos; is never used." verbose="The function &apos;escribe_var&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="240" column="0" />
+            <symbol>escribe_var</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;existe_lugar_de_base&apos; is never used." verbose="The function &apos;existe_lugar_de_base&apos; is never used." cwe="561">
+            <location file="src\memory_handler.hpp" line="268" column="0" />
+            <symbol>existe_lugar_de_base</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;index_of_MSDig&apos; is never used." verbose="The function &apos;index_of_MSDig&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="1257" column="0" />
+            <symbol>index_of_MSDig</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_0_divisor&apos; is never used." verbose="The function &apos;is_0_divisor&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="344" column="0" />
+            <symbol>is_0_divisor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_B&apos; is never used." verbose="The function &apos;is_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="805" column="0" />
+            <symbol>is_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_Bm1orBm2&apos; is never used." verbose="The function &apos;is_Bm1orBm2&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1067" column="0" />
+            <symbol>is_Bm1orBm2</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_Bp1&apos; is never used." verbose="The function &apos;is_Bp1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="822" column="0" />
+            <symbol>is_Bp1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_any_B_pow&apos; is never used." verbose="The function &apos;is_any_B_pow&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="914" column="0" />
+            <symbol>is_any_B_pow</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_far_maxormin&apos; is never used." verbose="The function &apos;is_far_maxormin&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1115" column="0" />
+            <symbol>is_far_maxormin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_filled_of&apos; is never used." verbose="The function &apos;is_filled_of&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="945" column="0" />
+            <symbol>is_filled_of</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_filled_of_1&apos; is never used." verbose="The function &apos;is_filled_of_1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="929" column="0" />
+            <symbol>is_filled_of_1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_filled_of_Bm1&apos; is never used." verbose="The function &apos;is_filled_of_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="937" column="0" />
+            <symbol>is_filled_of_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_maxormin&apos; is never used." verbose="The function &apos;is_maxormin&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1109" column="0" />
+            <symbol>is_maxormin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_maxorsubmax&apos; is never used." verbose="The function &apos;is_maxorsubmax&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1061" column="0" />
+            <symbol>is_maxorsubmax</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_near_maxormin&apos; is never used." verbose="The function &apos;is_near_maxormin&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1126" column="0" />
+            <symbol>is_near_maxormin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_not_0or1&apos; is never used." verbose="The function &apos;is_not_0or1&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1025" column="0" />
+            <symbol>is_not_0or1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_not_Bm1orBm2&apos; is never used." verbose="The function &apos;is_not_Bm1orBm2&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1079" column="0" />
+            <symbol>is_not_Bm1orBm2</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_not_maxormin&apos; is never used." verbose="The function &apos;is_not_maxormin&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1103" column="0" />
+            <symbol>is_not_maxormin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_not_maxorsubmax&apos; is never used." verbose="The function &apos;is_not_maxorsubmax&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1073" column="0" />
+            <symbol>is_not_maxorsubmax</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;m_mer_B&apos; is never used." verbose="The function &apos;m_mer_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="1214" column="0" />
+            <symbol>m_mer_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;m_rem_B&apos; is never used." verbose="The function &apos;m_rem_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="1199" column="0" />
+            <symbol>m_rem_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mer_B&apos; is never used." verbose="The function &apos;mer_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="1207" column="0" />
+            <symbol>mer_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mult_inv&apos; is never used." verbose="The function &apos;mult_inv&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="367" column="0" />
+            <symbol>mult_inv</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ref_data&apos; is never used." verbose="The function &apos;ref_data&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="664" column="0" />
+            <symbol>ref_data</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_0&apos; is never used." verbose="The function &apos;regd_0&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="245" column="0" />
+            <symbol>regd_0</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_1&apos; is never used." verbose="The function &apos;regd_1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="250" column="0" />
+            <symbol>regd_1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_B&apos; is never used." verbose="The function &apos;regd_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="260" column="0" />
+            <symbol>regd_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_Bm1&apos; is never used." verbose="The function &apos;regd_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="255" column="0" />
+            <symbol>regd_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_base_1&apos; is never used." verbose="The function &apos;regd_base_1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="215" column="0" />
+            <symbol>regd_base_1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_base_B&apos; is never used." verbose="The function &apos;regd_base_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="225" column="0" />
+            <symbol>regd_base_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_base_Bm1&apos; is never used." verbose="The function &apos;regd_base_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="220" column="0" />
+            <symbol>regd_base_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_base_pow_n_B&apos; is never used." verbose="The function &apos;regd_base_pow_n_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="230" column="0" />
+            <symbol>regd_base_pow_n_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_base_pow_n_B_m1&apos; is never used." verbose="The function &apos;regd_base_pow_n_B_m1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="235" column="0" />
+            <symbol>regd_base_pow_n_B_m1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_pow_n_B&apos; is never used." verbose="The function &apos;regd_pow_n_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="265" column="0" />
+            <symbol>regd_pow_n_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;regd_pow_n_B_m1&apos; is never used." verbose="The function &apos;regd_pow_n_B_m1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="270" column="0" />
+            <symbol>regd_pow_n_B_m1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rem_B&apos; is never used." verbose="The function &apos;rem_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="1192" column="0" />
+            <symbol>rem_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_dig&apos; is never used." verbose="The function &apos;set_dig&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="707" column="0" />
+            <symbol>set_dig</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_fill_1&apos; is never used." verbose="The function &apos;set_fill_1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="716" column="0" />
+            <symbol>set_fill_1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_fill_Bm1&apos; is never used." verbose="The function &apos;set_fill_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="721" column="0" />
+            <symbol>set_fill_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_fill_dig&apos; is never used." verbose="The function &apos;set_fill_dig&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="712" column="0" />
+            <symbol>set_fill_dig</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ssi_Bm1&apos; is never used." verbose="The function &apos;ssi_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="134" column="0" />
+            <symbol>ssi_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ssi_Bp1&apos; is never used." verbose="The function &apos;ssi_Bp1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="138" column="0" />
+            <symbol>ssi_Bp1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ssi_max&apos; is never used." verbose="The function &apos;ssi_max&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="176" column="0" />
+            <symbol>ssi_max</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ssi_submax&apos; is never used." verbose="The function &apos;ssi_submax&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="179" column="0" />
+            <symbol>ssi_submax</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sui_Bm1&apos; is never used." verbose="The function &apos;sui_Bm1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="124" column="0" />
+            <symbol>sui_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sui_Bp1&apos; is never used." verbose="The function &apos;sui_Bp1&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="128" column="0" />
+            <symbol>sui_Bp1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sui_max&apos; is never used." verbose="The function &apos;sui_max&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="160" column="0" />
+            <symbol>sui_max</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sui_submax&apos; is never used." verbose="The function &apos;sui_submax&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="163" column="0" />
+            <symbol>sui_submax</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sum_carry&apos; is never used." verbose="The function &apos;sum_carry&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="395" column="0" />
+            <symbol>sum_carry</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;to_string&apos; is never used." verbose="The function &apos;to_string&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="1167" column="0" />
+            <symbol>to_string</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ui_B&apos; is never used." verbose="The function &apos;ui_B&apos; is never used." cwe="561">
+            <location file="src\reg_digs_t.hpp" line="114" column="0" />
+            <symbol>ui_B</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ui_Bm1&apos; is never used." verbose="The function &apos;ui_Bm1&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="152" column="0" />
+            <symbol>ui_Bm1</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ui_Bm2&apos; is never used." verbose="The function &apos;ui_Bm2&apos; is never used." cwe="561">
+            <location file="src\dig_t.hpp" line="153" column="0" />
+            <symbol>ui_Bm2</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>
