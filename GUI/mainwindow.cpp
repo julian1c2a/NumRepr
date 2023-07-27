@@ -1,13 +1,17 @@
 #include "mainwindow.hpp"
 #include "../include/digit_variant_t.hpp"
 #include "../include/memory_handler.hpp"
-#include "../include/several_varlists_definition.hpp"
+#include "../include/varlist_definitions.hpp"
 #include "./ui_mainwindow.h"
 
 using llint_varlist_t = typename NumRepr::MemHand::llint_varlist_t;
 using ullint_varlist_t = typename NumRepr::MemHand::ullint_varlist_t;
 using ld_varlist_t = typename NumRepr::MemHand::ld_varlist_t;
 using digit_varlist_t = typename NumRepr::MemHand::digit_varlist_t;
+using NumRepr::make_digit_variant;
+using sllint_t = signed long long int;
+using ullint_t = unsigned long long int;
+using ldouble_t = long double;
 
 enum tipo_o_plantilla_de_tipo_e {
     longlong,
@@ -24,11 +28,49 @@ enum tipo_o_plantilla_de_tipo_e {
     desconocido
 };
 
+using NumRepr::digit_variant;
+using valor_t = std::variant<sllint_t, ullint_t, ldouble_t, digit_variant>;
+enum class tipo_variant_e { longlong, unsignedlonglong, longdouble, digito, desconocido };
+
+tipo_variant_e a_tipo_variant_e(int ind)
+{
+    switch (ind) {
+    case 0:
+        return tipo_variant_e::longlong;
+    case 1:
+        return tipo_variant_e::unsignedlonglong;
+    case 2:
+        return tipo_variant_e::longdouble;
+    case 3:
+        return tipo_variant_e::digito;
+    case 4:
+    default:
+        return tipo_variant_e::desconocido;
+    }
+}
+
+int a_indice(tipo_variant_e case_enum)
+{
+    switch (case_enum) {
+    case tipo_variant_e::longlong:
+        return 0;
+    case tipo_variant_e::unsignedlonglong:
+        return 1;
+    case tipo_variant_e::longdouble:
+        return 2;
+    case tipo_variant_e::digito:
+        return 3;
+    case tipo_variant_e::desconocido:
+    default:
+        return 4;
+    }
+}
+
 struct datos_de_entrada_desde_ui
 {
     std::string nombre;
     unsigned long long base;
-    long long valor;
+    valor_t valor;
     unsigned long long longPE;
     unsigned long long longPF;
     tipo_o_plantilla_de_tipo_e tipo;
@@ -142,7 +184,7 @@ void MainWindow::on_comboBox_plantilla_2_currentIndexChanged(int index)
 
 void MainWindow::on_lineEdit_Base_1_textEdited(const QString &arg1)
 {
-    const unsigned long long user_radix{arg1.toULongLong()};
+    const ullint_t user_radix{arg1.toULongLong()};
     if ((user_radix > 1) && (user_radix < 66))
         objeto[0].base = user_radix;
     //else
@@ -151,7 +193,7 @@ void MainWindow::on_lineEdit_Base_1_textEdited(const QString &arg1)
 
 void MainWindow::on_lineEdit_Base_2_textEdited(const QString &arg1)
 {
-    const unsigned long long user_radix{arg1.toULongLong()};
+    const ullint_t user_radix{arg1.toULongLong()};
     if ((user_radix > 1) && (user_radix < 66))
         objeto[1].base = user_radix;
     //else
@@ -160,7 +202,7 @@ void MainWindow::on_lineEdit_Base_2_textEdited(const QString &arg1)
 
 void MainWindow::on_lineEdit_longitud_PE_1_textChanged(const QString &arg1)
 {
-    const unsigned long long user_length{arg1.toULongLong()};
+    const ullint_t user_length{arg1.toULongLong()};
     if ((user_length > 0) && (user_length < 33))
         objeto[0].longPE = user_length;
     //else
@@ -169,7 +211,7 @@ void MainWindow::on_lineEdit_longitud_PE_1_textChanged(const QString &arg1)
 
 void MainWindow::on_lineEdit_longitud_PE_2_textChanged(const QString &arg1)
 {
-    const unsigned long long user_length{arg1.toULongLong()};
+    const ullint_t user_length{arg1.toULongLong()};
     if ((user_length > 0) && (user_length < 33))
         objeto[0].longPE = user_length;
     //else
@@ -178,7 +220,7 @@ void MainWindow::on_lineEdit_longitud_PE_2_textChanged(const QString &arg1)
 
 void MainWindow::on_lineEdit_longitud_PF_1_textChanged(const QString &arg1)
 {
-    const unsigned long long user_length{arg1.toULongLong()};
+    const ullint_t user_length{arg1.toULongLong()};
     if ((user_length > 0) && (user_length < 33))
         objeto[0].longPF = user_length;
     //else
@@ -187,7 +229,7 @@ void MainWindow::on_lineEdit_longitud_PF_1_textChanged(const QString &arg1)
 
 void MainWindow::on_lineEdit_longitud_PF_2_textChanged(const QString &arg1)
 {
-    const unsigned long long user_length{arg1.toULongLong()};
+    const ullint_t user_length{arg1.toULongLong()};
     if ((user_length > 0) && (user_length < 33))
         objeto[1].longPF = user_length;
     //else
@@ -196,14 +238,40 @@ void MainWindow::on_lineEdit_longitud_PF_2_textChanged(const QString &arg1)
 
 void MainWindow::on_lineEdit_valor_1_textChanged(const QString &arg1)
 {
-    const long long user_value{arg1.toLongLong()};
-    objeto[0].valor = user_value;
+    switch (objeto[0].tipo) {
+    case longlong:
+        objeto[0].valor = arg1.toLongLong();
+        break;
+    case unsignedlonglong:
+        objeto[0].valor = arg1.toULongLong();
+        break;
+    case longdouble:
+        objeto[0].valor = static_cast<ldouble_t>(arg1.toDouble());
+        break;
+    case digito:
+        objeto[0].valor = make_digit_variant(objeto[0].base, arg1.toLongLong());
+        break;
+    default:;
+    }
 }
 
 void MainWindow::on_lineEdit_valor_2_textChanged(const QString &arg1)
 {
-    const long long user_value{arg1.toLongLong()};
-    objeto[1].valor = user_value;
+    switch (objeto[1].tipo) {
+    case longlong:
+        objeto[1].valor = arg1.toLongLong();
+        break;
+    case unsignedlonglong:
+        objeto[1].valor = arg1.toULongLong();
+        break;
+    case longdouble:
+        objeto[1].valor = static_cast<ldouble_t>(arg1.toDouble());
+        break;
+    case digito:
+        objeto[1].valor = make_digit_variant(objeto[0].base, arg1.toLongLong());
+        break;
+    default:;
+    }
 }
 
 void crear_variable(int index)
@@ -211,40 +279,65 @@ void crear_variable(int index)
     if ((index >= 0) && (index <= 2)) {
         switch (objeto[index].tipo) {
         case longlong:
-            ll_lista.create_var(objeto[index].nombre, objeto[index].valor);
             if (ull_lista.contains(objeto[index].nombre))
                 ull_lista.erase_var(objeto[index].nombre);
             if (ld_lista.contains(objeto[index].nombre))
                 ld_lista.erase_var(objeto[index].nombre);
             if (digito_lista.contains(objeto[index].nombre))
                 digito_lista.erase_var(objeto[index].nombre);
+            ll_lista.create_var(objeto[index].nombre, std::get<sllint_t>(objeto[index].valor));
             break;
         case unsignedlonglong:
-            ull_lista.create_var(objeto[index].nombre, objeto[index].valor);
             if (ll_lista.contains(objeto[index].nombre))
                 ll_lista.erase_var(objeto[index].nombre);
             if (ld_lista.contains(objeto[index].nombre))
                 ld_lista.erase_var(objeto[index].nombre);
             if (digito_lista.contains(objeto[index].nombre))
                 digito_lista.erase_var(objeto[index].nombre);
+            ull_lista.create_var(objeto[index].nombre, std::get<ullint_t>(objeto[index].valor));
             break;
         case longdouble:
-            ld_lista.create_var(objeto[index].nombre, objeto[index].valor);
             if (ull_lista.contains(objeto[index].nombre))
                 ull_lista.erase_var(objeto[index].nombre);
             if (ll_lista.contains(objeto[index].nombre))
                 ll_lista.erase_var(objeto[index].nombre);
             if (digito_lista.contains(objeto[index].nombre))
                 digito_lista.erase_var(objeto[index].nombre);
+            ld_lista.create_var(objeto[index].nombre, std::get<ldouble_t>(objeto[index].valor));
             break;
         case digito:
-            digito_lista.create_var(objeto[index].nombre, objeto[index].base, objeto[index].valor);
             if (ull_lista.contains(objeto[index].nombre))
                 ull_lista.erase_var(objeto[index].nombre);
             if (ld_lista.contains(objeto[index].nombre))
                 ld_lista.erase_var(objeto[index].nombre);
             if (ll_lista.contains(objeto[index].nombre))
                 ll_lista.erase_var(objeto[index].nombre);
+            switch (a_tipo_variant_e(objeto[index].valor.index())) {
+            case tipo_variant_e::longlong:
+                objeto[index].valor = NumRepr::make_digit_variant(objeto[index].base,
+                                                                  std::get<sllint_t>(
+                                                                      objeto[index].valor));
+                break;
+            case tipo_variant_e::unsignedlonglong:
+                objeto[index].valor = NumRepr::make_digit_variant(objeto[index].base,
+                                                                  std::get<ullint_t>(
+                                                                      objeto[index].valor));
+                break;
+            case tipo_variant_e::longdouble:
+                objeto[index].valor = NumRepr::make_digit_variant(objeto[index].base,
+                                                                  static_cast<sllint_t>(
+                                                                      std::get<ldouble_t>(
+                                                                          objeto[index].valor)));
+                break;
+            case tipo_variant_e::digito:
+                //objeto[index].valor = std::get<digit_variant>(objeto[index].valor);
+                break;
+            case tipo_variant_e::desconocido:
+            default:;
+            }
+
+            digito_lista.create_var(objeto[index].nombre,
+                                    std::get<digit_variant>(objeto[index].valor));
             break;
         case registro:
             //registro_lista.create_var(objeto[index].nombre,
@@ -465,20 +558,22 @@ void MainWindow::on_pushButton_asignacion_clicked()
                 const NumRepr::digit_variant obj0{digito_lista[objeto[0].nombre]};
                 digito_lista[objeto[2].nombre] = obj0;
                 objeto[2].base = digito_lista[objeto[2].nombre].radix();
-                objeto[2].valor = digito_lista[objeto[2].nombre]();
+                objeto[2].valor = digito_lista[objeto[2].nombre];
             }
         } else if (objeto[1].tipo == longlong) {
             digito_lista[objeto[0].nombre] = NumRepr::make_digit_variant(objeto[0].base,
-                                                                         objeto[1].valor);
+                                                                         std::get<sllint_t>(
+                                                                             objeto[1].valor));
             digito_lista[objeto[2].nombre] = digito_lista[objeto[0].nombre];
             objeto[2].base = digito_lista[objeto[2].nombre].radix();
-            objeto[2].valor = digito_lista[objeto[2].nombre]();
+            objeto[2].valor = digito_lista[objeto[2].nombre];
         } else if (objeto[1].tipo == unsignedlonglong) {
             digito_lista[objeto[0].nombre] = NumRepr::make_digit_variant(objeto[0].base,
-                                                                         objeto[1].valor);
+                                                                         std::get<ullint_t>(
+                                                                             objeto[1].valor));
             digito_lista[objeto[2].nombre] = digito_lista[objeto[0].nombre];
             objeto[2].base = digito_lista[objeto[2].nombre].radix();
-            objeto[2].valor = digito_lista[objeto[2].nombre]();
+            objeto[2].valor = digito_lista[objeto[2].nombre];
         }
         // else {
         //     throw std::logic_error("NO IMPLEMENTADO AÚN");
@@ -813,6 +908,26 @@ void MainWindow::on_lineEdit_nombre_in_result_textEdited(const QString &arg1)
     if (!arg1.isEmpty()) {
         objeto[2].nombre = arg1.toStdString();
     } else {
-        objeto[2].nombre = std::string("resultado");
+        objeto[2].nombre = ld_varlist_t::default_name;
+    }
+
+    switch (objeto[2].tipo) {
+    case longlong:
+        objeto[2].valor = arg1.toLongLong();
+        ll_lista.create_var(objeto[2].nombre, std::get<sllint_t>(objeto[2].valor));
+        break;
+    case unsignedlonglong:
+        objeto[2].valor = arg1.toULongLong();
+        ull_lista.create_var(objeto[2].nombre, std::get<ullint_t>(objeto[2].valor));
+        break;
+    case longdouble:
+        objeto[2].valor = static_cast<ldouble_t>(arg1.toDouble());
+        ld_lista.create_var(objeto[2].nombre, std::get<ldouble_t>(objeto[2].valor));
+        break;
+    case digito:
+        objeto[2].valor = make_digit_variant(objeto[0].base, arg1.toLongLong());
+        digito_lista.create_var(objeto[2].nombre, std::get<digit_variant>(objeto[2].valor));
+        break;
+    default:;
     }
 }

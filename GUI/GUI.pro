@@ -40,8 +40,8 @@ HEADERS += \
     ../include/dig_t.hpp \
     ../include/digit_variant_t.hpp \
     ../include/memory_handler.hpp \
-    ../include/several_varlists_definition.hpp \
     ../include/utilities.hpp \
+    ../include/varlist_definitions.hpp \
     mainwindow.hpp
 
 FORMS += \

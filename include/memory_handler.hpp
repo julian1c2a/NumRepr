@@ -13,6 +13,12 @@ namespace MemHand {
 
 using namespace std::literals::string_literals;
 
+/// std::map<key_t,value_t>
+/// std::map<std::string,long double> mi_mapa;
+/// mi_mapa["A"] -> devuelve 123.34576546
+/// std::array<int,10> mi_vector;
+/// mi_vector[5] -> devuelve -23
+
 template<typename VALUE_TYPE>
 using varmap_t = typename std::map<std::string, VALUE_TYPE>;
 
@@ -25,7 +31,7 @@ public:
     using node_t = typename std::pair<key_t, value_t>;
     using varlist_t = varmap_t<value_t>;
 
-protected:
+private:
     TC_varlist_t(const TC_varlist_t &) = delete;
     TC_varlist_t(TC_varlist_t &&) = delete;
     TC_varlist_t &operator=(const TC_varlist_t &) = delete;

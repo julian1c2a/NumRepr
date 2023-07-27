@@ -1,5 +1,5 @@
-#ifndef SEVERAL_VARLISTS_DEFINITION_H
-#define SEVERAL_VARLISTS_DEFINITION_H
+#ifndef VARLIST_DEFINITIONS_H
+#define VARLIST_DEFINITIONS_H
 
 #include "memory_handler.hpp"
 #include "digit_variant_t.hpp"
@@ -7,10 +7,14 @@
 namespace NumRepr {
 namespace MemHand {
 
-struct ullint_varlist_t : public TC_varlist_t<unsigned long long int>
+using sllint_t = signed long long int;
+using ullint_t = unsigned long long int;
+using ldouble_t = long double;
+
+struct ullint_varlist_t : public TC_varlist_t<ullint_t>
 {
 public:
-    using value_t = unsigned long long int;
+    using value_t = ullint_t;
     using base_t = TC_varlist_t<value_t>;
     using key_t = typename base_t::key_t;
     ullint_varlist_t() = default;
@@ -24,10 +28,10 @@ public:
     }
 };
 
-struct llint_varlist_t : public TC_varlist_t<long long int>
+struct llint_varlist_t : public TC_varlist_t<sllint_t>
 {
 public:
-    using value_t = long long int;
+    using value_t = sllint_t;
     using base_t = typename NumRepr::MemHand::TC_varlist_t<value_t>;
     using key_t = typename base_t::key_t;
     llint_varlist_t() = default;
@@ -41,10 +45,10 @@ public:
     }
 };
 
-struct ld_varlist_t : public TC_varlist_t<long double>
+struct ld_varlist_t : public TC_varlist_t<ldouble_t>
 {
 public:
-    using value_t = long double;
+    using value_t = ldouble_t;
     using base_t = typename NumRepr::MemHand::TC_varlist_t<value_t>;
     using key_t = typename base_t::key_t;
     ld_varlist_t() = default;
@@ -89,4 +93,4 @@ public:
 } // namespace memory_handler
 } // namespace NumRepr
 
-#endif // SEVERAL_VARLISTS_DEFINITION_H
+#endif // VARLIST_DEFINITIONS_H
