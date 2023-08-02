@@ -516,7 +516,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Base numérica &gt; 1</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_valor_resultado">
+   <widget class="QLabel" name="label_valor_2">
     <property name="geometry">
      <rect>
       <x>1500</x>
@@ -542,7 +542,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>     :=</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_valor_2">
+   <widget class="QLineEdit" name="lineEdit_valor_1">
     <property name="geometry">
      <rect>
       <x>1520</x>
@@ -552,7 +552,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_nombre_in_2">
+   <widget class="QLineEdit" name="lineEdit_nombre_in_1">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -562,7 +562,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_plantilla_1">
+   <widget class="QComboBox" name="comboBox_plantilla_0">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -627,7 +627,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </property>
     </item>
    </widget>
-   <widget class="QLabel" name="label_base_resultado">
+   <widget class="QLabel" name="label_base_2">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -640,7 +640,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>BaseNuméricaDelResultado</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_nombre_in_1">
+   <widget class="QLineEdit" name="lineEdit_nombre_in_0">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -650,7 +650,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_longitud_PE_1">
+   <widget class="QLineEdit" name="lineEdit_longitud_PE_0">
     <property name="geometry">
      <rect>
       <x>1030</x>
@@ -673,7 +673,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Tipo o plantilla de tipo</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_Base_2">
+   <widget class="QLineEdit" name="lineEdit_Base_1">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -683,7 +683,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_longitud_PE_2">
+   <widget class="QLineEdit" name="lineEdit_longitud_PE_1">
     <property name="geometry">
      <rect>
       <x>1030</x>
@@ -719,7 +719,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Operaciones</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_variable_1_preparada">
+   <widget class="QCheckBox" name="checkBox_variable_0_preparada">
     <property name="geometry">
      <rect>
       <x>1650</x>
@@ -729,10 +729,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>variable 1 prep</string>
+     <string>variable 0 prep</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_longPF_resultado">
+   <widget class="QLabel" name="label_longPF_2">
     <property name="geometry">
      <rect>
       <x>1240</x>
@@ -745,7 +745,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>LongPFDelResultado</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_variable_2_preparada">
+   <widget class="QCheckBox" name="checkBox_variable_1_preparada">
     <property name="geometry">
      <rect>
       <x>1650</x>
@@ -755,7 +755,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
     <property name="text">
-     <string>variable 2 prep</string>
+     <string>variable 1 prep</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_asignacion_3">
@@ -784,7 +784,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Nombre de Variable</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_longitud_PF_1">
+   <widget class="QLineEdit" name="lineEdit_longitud_PF_0">
     <property name="geometry">
      <rect>
       <x>1270</x>
@@ -794,7 +794,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_plantilla_2">
+   <widget class="QComboBox" name="comboBox_plantilla_1">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -872,7 +872,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Valor</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_plantilla_resultado">
+   <widget class="QLabel" name="label_plantilla_2">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -885,7 +885,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>PlantillaDelResultado</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_longPE_resultado">
+   <widget class="QLabel" name="label_longPE_2">
     <property name="geometry">
      <rect>
       <x>1000</x>
@@ -898,7 +898,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>LongPEDelResultado</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_nombre_in_result">
+   <widget class="QLineEdit" name="lineEdit_nombre_in_2">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -908,7 +908,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_longitud_PF_2">
+   <widget class="QLineEdit" name="lineEdit_longitud_PF_1">
     <property name="geometry">
      <rect>
       <x>1270</x>
@@ -918,7 +918,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_valor_1">
+   <widget class="QLineEdit" name="lineEdit_valor_0">
     <property name="geometry">
      <rect>
       <x>1520</x>
@@ -954,7 +954,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>Longitud Parte Fraccion</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_Base_1">
+   <widget class="QLineEdit" name="lineEdit_Base_0">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -964,7 +964,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </rect>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_variable_result">
+   <widget class="QCheckBox" name="checkBox_variable_2_preparada">
     <property name="geometry">
      <rect>
       <x>1662</x>
@@ -991,10 +991,22 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="title">
      <string>Calculator for NumericRepresentations library</string>
     </property>
+    <addaction name="actionCalculadora_para_la_libreria_Cpp_NumRepr"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
    </widget>
    <addaction name="menuCalculator_for_NumericRepresentations_library"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora_para_la_libreria_Cpp_NumRepr">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Calculadora para la librería C++ NumRepr</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

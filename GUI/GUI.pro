@@ -30,6 +30,7 @@ LIBS += -L c:/msys64/mingw64/lib -lstdc++
 SOURCES += \
     ../src/digit_variant_t.cpp \
     ../src/memory_handler.cpp \
+    GUITypesNHelpers.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -42,6 +43,7 @@ HEADERS += \
     ../include/memory_handler.hpp \
     ../include/utilities.hpp \
     ../include/varlist_definitions.hpp \
+    GUITypesNHelpers.hpp \
     mainwindow.hpp
 
 FORMS += \
