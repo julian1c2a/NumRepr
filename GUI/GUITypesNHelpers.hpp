@@ -2,8 +2,8 @@
 #define GUITYPESNHELPERS_HPP
 
 #include "../include/digit_variant_t.hpp"
-#include "../include/memory_handler.hpp"
 #include "../include/varlist_definitions.hpp"
+//#include "./ui_mainwindow.h"
 
 using llint_varlist_t = typename NumRepr::MemHand::llint_varlist_t;
 using ullint_varlist_t = typename NumRepr::MemHand::ullint_varlist_t;
@@ -50,6 +50,15 @@ struct datos_de_entrada_desde_ui
 tipo_o_plantilla_de_tipo_e a_tipoenum(int index);
 
 int a_indice(tipo_o_plantilla_de_tipo_e case_enum);
+
+std::string a_texto(tipo_o_plantilla_de_tipo_e case_enum);
+
+bool objeto_completo(const auto &uiObj_0,
+                     const auto &uiObj_1,
+                     const auto &uiObj_2,
+                     const auto &uiObj_3,
+                     const auto &uiObj_4,
+                     const auto &uiObj_5);
 
 //void on_lineEdit_nombre_textEdited(const std::string &arg1,
 //                                   auto &objeto,

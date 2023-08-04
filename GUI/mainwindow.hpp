@@ -59,6 +59,12 @@ private slots:
 
     void on_pushButton_suma_clicked();
 
+    void on_pushButton_igual_clicked();
+
+    void on_pushButton_compl_Bm1_op_clicked();
+
+    void on_pushButton_orwise_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

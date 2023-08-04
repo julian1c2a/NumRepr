@@ -781,162 +781,116 @@ bool digit_variant::operator==(digit_variant otro) const noexcept {
 template<type_traits::integral_c Int_t>
 
 bool digit_variant::operator==(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left == right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left == right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
 }     // FIN DE LA FUNCION OPERATOR==() -> BOOL
 
 template<type_traits::integral_c Int_t>
 
 bool digit_variant::operator!=(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left != right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left != right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
-}     // FIN DE LA FUNCION OPERATOR==() -> BOOL
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
+} // FIN DE LA FUNCION OPERATOR!=() -> BOOL
 
 template<type_traits::integral_c Int_t>
-
 bool digit_variant::operator<(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left < right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left < right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
-}     // FIN DE LA FUNCION OPERATOR==() -> BOOL
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
+} // FIN DE LA FUNCION OPERATOR<() -> BOOL
 
 template<type_traits::integral_c Int_t>
 
 bool digit_variant::operator<=(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left <= right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left <= right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
-}     // FIN DE LA FUNCION OPERATOR==() -> BOOL
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
+} // FIN DE LA FUNCION OPERATOR<=() -> BOOL
 
 template<type_traits::integral_c Int_t>
-
 bool digit_variant::operator>(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left > right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left > right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
-}     // FIN DE LA FUNCION OPERATOR==() -> BOOL
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
+} // FIN DE LA FUNCION OPERATOR>() -> BOOL
 
 template<type_traits::integral_c Int_t>
-
 bool digit_variant::operator>=(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> bool {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left >= right);
-        }
-        else {// CASOS INCOMPARABLES
-          return false;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> bool {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left >= right);
+          } else { // CASOS INCOMPARABLES
+              return false;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
 }     // FIN DE LA FUNCION OPERATOR==() -> BOOL
 
 template<type_traits::integral_c Int_t>
-
 std::weak_ordering digit_variant::operator<=>(Int_t rhs) const noexcept {
-  return
-    std::visit(
-      []<std::uint64_t k,std::uint64_t l>(
-        const dig_t<k>& left,Int_t right
-        ) -> std::weak_ordering {
-
-        if constexpr ((k == l) &&(k > 1)){ // CASOS COMPARABLES
-          return  (left <=> right);
-        }
-        else {// CASOS INCOMPARABLES
-          return std::weak_ordering::equivalent;
-        }
-
-      },      // FIN DE DEFINICION DE LA FUNCION LAMBDA
-      *this,  // ARGUMENTO 1
+  return std::visit(
+      []<std::uint64_t k>(const dig_t<k> &left, Int_t right) -> std::weak_ordering {
+          if constexpr (k > 1) { // CASOS COMPARABLES
+              return (left <=> right);
+          } else { // CASOS INCOMPARABLES
+              return std::weak_ordering::equivalent;
+          }
+      },     // FIN DE DEFINICION DE LA FUNCION LAMBDA
+      *this, // ARGUMENTO 1
       rhs    // ARGUMENTO 2
-    ) // FIN DEL VISIT
-  ;   // FIN DEL RETURN
+      )      // FIN DEL VISIT
+      ;      // FIN DEL RETURN
 }     // FIN DE LA FUNCION OPERATOR==() -> BOOL
 
 
@@ -1233,6 +1187,16 @@ const digit_variant& digit_variant::operator+=(digit_variant otro)  noexcept {
   	return (*this);
 }
 
+template<type_traits::integral_c Int_t>
+const digit_variant &digit_variant::operator+=(Int_t arg) noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> &left, Int_t right) -> void {
+        if constexpr (k > 1)
+            left += right;
+    };
+    std::visit(fn, *this, arg);
+    return (*this);
+}
 
 const digit_variant& digit_variant::operator-=(digit_variant otro) noexcept  {
   	auto fn =
@@ -1246,6 +1210,16 @@ const digit_variant& digit_variant::operator-=(digit_variant otro) noexcept  {
   	return (*this);
 }
 
+template<type_traits::integral_c Int_t>
+const digit_variant &digit_variant::operator-=(Int_t arg) noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> &left, Int_t right) -> void {
+        if constexpr (k > 1)
+            left -= right;
+    };
+    std::visit(fn, *this, arg);
+    return (*this);
+}
 
 const digit_variant& digit_variant::operator*=(digit_variant otro) noexcept  {
   	auto fn =
@@ -1259,6 +1233,16 @@ const digit_variant& digit_variant::operator*=(digit_variant otro) noexcept  {
   	return (*this);
 }
 
+template<type_traits::integral_c Int_t>
+const digit_variant &digit_variant::operator*=(Int_t arg) noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> &left, Int_t right) -> void {
+        if constexpr (k > 1)
+            left *= right;
+    };
+    std::visit(fn, *this, arg);
+    return (*this);
+}
 
 const digit_variant& digit_variant::operator/=(digit_variant otro)  noexcept {
   	auto fn =
@@ -1272,19 +1256,38 @@ const digit_variant& digit_variant::operator/=(digit_variant otro)  noexcept {
   	return (*this);
 }
 
-
-const digit_variant& digit_variant::operator%=(digit_variant otro) noexcept {
-  	auto fn =
-  		[]<std::uint64_t k,std::uint64_t l>(dig_t<k>& left , dig_t<l> right)->void
-  		{
-			if constexpr (k == l) {
-  	        	left %= right;
-			}
-  	    };
-  	std::visit(fn,*this,otro);
-  	return (*this);
+template<type_traits::integral_c Int_t>
+const digit_variant &digit_variant::operator/=(Int_t arg) noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> &left, Int_t right) -> void {
+        if constexpr (k > 1)
+            left /= right;
+    };
+    std::visit(fn, *this, arg);
+    return (*this);
 }
 
+const digit_variant &digit_variant::operator%=(digit_variant otro) noexcept
+{
+    auto fn = []<std::uint64_t k, std::uint64_t l>(dig_t<k> &left, dig_t<l> right) -> void {
+        if constexpr (k == l) {
+            left %= right;
+        }
+    };
+    std::visit(fn, *this, otro);
+    return (*this);
+}
+
+template<type_traits::integral_c Int_t>
+const digit_variant &digit_variant::operator%=(Int_t arg) noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> &left, Int_t right) -> void {
+        if constexpr (k > 1)
+            left %= right;
+    };
+    std::visit(fn, *this, arg);
+    return (*this);
+}
 
 digit_variant digit_variant::operator+(digit_variant other) const  noexcept {
     digit_variant result{};
@@ -1347,20 +1350,86 @@ digit_variant digit_variant::operator%(digit_variant other) const  noexcept {
     return result;
 }
 
-//
-//digit_variant digit_variant::operator+() const  noexcept {
-//  return digit_variant{*this};
-//}
-
-
-digit_variant digit_variant::operator~() const noexcept {
-  digit_variant result{};
-  std::visit([&result]<std::uint64_t k>(
-                 const dig_t<k> &arg) -> void { result.emplace<dig_t<k>>(~arg); },
-             *this);
-  return result;
+template<type_traits::integral_c Int_t>
+digit_variant digit_variant::operator+(Int_t other) const noexcept
+{
+    digit_variant result{};
+    auto fn = [&result]<std::uint64_t K>(const dig_t<K> &left, Int_t right) {
+        if constexpr (K > 1) {
+            result = left + right;
+        }
+    };
+    std::visit(fn, *this, other);
+    return result;
 }
 
+template<type_traits::integral_c Int_t>
+digit_variant digit_variant::operator-(Int_t other) const noexcept
+{
+    digit_variant result{};
+    auto fn = [&result]<std::uint64_t K>(const dig_t<K> &left, Int_t right) {
+        if constexpr (K > 1) {
+            result = left - right;
+        }
+    };
+    std::visit(fn, *this, other);
+    return result;
+}
+
+template<type_traits::integral_c Int_t>
+digit_variant digit_variant::operator*(Int_t other) const noexcept
+{
+    digit_variant result{};
+    auto fn = [&result]<std::uint64_t K>(const dig_t<K> &left, Int_t right) {
+        if constexpr (K > 1) {
+            result = left * right;
+        }
+    };
+    std::visit(fn, *this, other);
+    return result;
+}
+
+template<type_traits::integral_c Int_t>
+digit_variant digit_variant::operator/(Int_t other) const noexcept
+{
+    digit_variant result{};
+    auto fn = [&result]<std::uint64_t K>(const dig_t<K> &left, Int_t right) {
+        if constexpr (K > 1) {
+            result = left / right;
+        }
+    };
+    std::visit(fn, *this, other);
+    return result;
+}
+
+template<type_traits::integral_c Int_t>
+digit_variant digit_variant::operator%(Int_t other) const noexcept
+{
+    digit_variant result{};
+    auto fn = [&result]<std::uint64_t K>(const dig_t<K> &left, Int_t right) {
+        if constexpr (K > 1) {
+            result = left % right;
+        }
+    };
+    std::visit(fn, *this, other);
+    return result;
+}
+
+digit_variant digit_variant::operator~() const noexcept
+{
+    digit_variant result{};
+    std::visit([&result]<std::uint64_t k>(
+                   const dig_t<k> &arg) -> void { result.emplace<dig_t<k>>(~arg); },
+               *this);
+    return result;
+}
+
+template<type_traits::integral_c Int_t>
+digit_variant::operator Int_t() const noexcept
+{
+    auto fn = []<std::uint64_t k>(dig_t<k> obj) { return static_cast<Int_t>(obj); };
+    return fn(*this);
+}
 
 digit_variant digit_variant::operator-() const  noexcept {
   digit_variant result{};
@@ -1389,4 +1458,4 @@ std::istream& operator>>(std::istream& is, digit_variant& arg) {
   return is;
 }
 
-} // END OF NAMESPACE UINTVAR
+} // namespace NumRepr

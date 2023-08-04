@@ -298,6 +298,9 @@ struct digit_variant : public digit_variant_t
   template<type_traits::integral_c Int_t>
   bool operator>=(Int_t rhs) const noexcept;
 
+  template<type_traits::integral_c Int_t>
+  explicit operator Int_t() const noexcept;
+
   /// METODO PROPIO DE C++20
   /// ESTABLECEMOS UN ORDEN PARCIAL SOBRE LOS ENTEROS SI a b EN Z
   /// ESTANDO EN ESTE AMBITO DE BASE B SI a mod B = b mod B
