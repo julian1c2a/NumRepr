@@ -2,6 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <QMainWindow>
+#include "GUITypesNHelpers.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -64,6 +65,10 @@ private slots:
     void on_pushButton_compl_Bm1_op_clicked();
 
     void on_pushButton_orwise_clicked();
+
+    void actualiza_objeto_2_en_gui(tipo_o_plantilla_de_tipo_e tipo);
+
+    void actualiza_objeto_0_en_gui(tipo_o_plantilla_de_tipo_e tipo);
 
 private:
     Ui::MainWindow *ui;

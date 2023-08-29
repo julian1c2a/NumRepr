@@ -24,15 +24,12 @@ using std::isspace;
 using std::string;
 using std::unsigned_integral;
 
-// DEFINICIÓN DEL TIPO VARIANT PARA 64 BASES DIFERENTES 
-// Y LA PLANTILLA-TIPO DIG_T CON METAPROGRAMACIÓN DE TEMPLATES
-
+//enum class radixformat { bin, dec };
 
 constexpr static std::uint64_t size_of_variant=64ull;
 
 struct digit_variant;
-//  BEGIN: CONSTRUCCIÓN DE LAS ESTRUCTURAS PRINCIPALES PARA LA
-//         META-FUNCIÓN
+
 /// TC_variant es un variant que depende de un solo Template Class
 template <template <std::uint64_t I> class TC, class>
 struct TC_variant;
@@ -45,10 +42,6 @@ struct TC_variant<TC, std::index_sequence<Is...>> {
 template <template <std::uint64_t I> class TC, class TSeq>
 using TC_variant_t = typename TC_variant<TC, TSeq>::type;
 
-//  END  : CONSTRUCCIÓN DE LAS ESTRUCTURAS PRINCIPALES PARA LA
-//         META-FUNCIÓN
-
-//  USO DE LA METAFUNCIÓN PARA DEFINIR EL VARIANT
 using digit_variant_t = TC_variant_t<dig_t , std::make_index_sequence<size_of_variant>>;
 
 /// TIPOS

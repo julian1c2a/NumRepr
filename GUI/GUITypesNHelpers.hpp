@@ -1,6 +1,7 @@
 #ifndef GUITYPESNHELPERS_HPP
 #define GUITYPESNHELPERS_HPP
 
+#include <QString>
 #include "../include/digit_variant_t.hpp"
 #include "../include/varlist_definitions.hpp"
 //#include "./ui_mainwindow.h"
@@ -60,41 +61,11 @@ bool objeto_completo(const auto &uiObj_0,
                      const auto &uiObj_4,
                      const auto &uiObj_5);
 
-//void on_lineEdit_nombre_textEdited(const std::string &arg1,
-//                                   auto &objeto,
-//                                   std::size_t indice,
-//                                   auto &ll_lista,
-//                                   auto &ull_lista,
-//                                   auto &ld_lista,
-//                                   auto &digito_lista)
-//{
-//    if (!arg1.empty()) {
-//        objeto[indice].nombre = arg1;
-//    } else {
-//        objeto[indice].nombre = llint_varlist_t::default_name;
-//    }
-
-//    switch (objeto[indice].tipo) {
-//    case tipo_o_plantilla_de_tipo_e::longlong:
-//        objeto[indice].valor = arg1.toLongLong();
-//        ll_lista.create_var(objeto[indice].nombre, std::get<sllint_t>(objeto[indice].valor));
-//        break;
-//    case tipo_o_plantilla_de_tipo_e::unsignedlonglong:
-//        objeto[indice].valor = arg1.toULongLong();
-//        ull_lista.create_var(objeto[indice].nombre, std::get<ullint_t>(objeto[indice].valor));
-//        break;
-//    case tipo_o_plantilla_de_tipo_e::longdouble:
-//        objeto[indice].valor = static_cast<ldouble_t>(arg1.toDouble());
-//        ld_lista.create_var(objeto[indice].nombre, std::get<ldouble_t>(objeto[indice].valor));
-//        break;
-//    case tipo_o_plantilla_de_tipo_e::digito:
-//        objeto[indice].valor = make_digit_variant(objeto[0].base, arg1.toLongLong());
-//        digito_lista.create_var(objeto[indice].nombre,
-//                                std::get<digit_variant>(objeto[indice].valor));
-//        break;
-//    case tipo_o_plantilla_de_tipo_e::desconocido:
-//    default:;
-//    }
-//}
+void create_variable(const std::string &nombre,
+                     datos_de_entrada_desde_ui &objeto,
+                     auto &ll_lista,
+                     auto &ull_lista,
+                     auto &ld_lista,
+                     auto &digito_lista);
 
 #endif // GUITYPESNHELPERS_HPP
