@@ -29,7 +29,9 @@ LIBS += -L c:/msys64/mingw64/lib -lstdc++
 
 SOURCES += \
     ../src/digit_variant_t.cpp \
+    ../src/make_register_variant.cpp \
     ../src/memory_handler.cpp \
+    ../src/register_variant_t.cpp \
     GUITypesNHelpers.cpp \
     main.cpp \
     mainwindow.cpp
@@ -40,7 +42,11 @@ HEADERS += \
     ../include/basic_types.hpp \
     ../include/dig_t.hpp \
     ../include/digit_variant_t.hpp \
+    ../include/int_reg_digs_t.hpp \
     ../include/memory_handler.hpp \
+    ../include/nat_reg_digs_t.hpp \
+    ../include/reg_digs_t.hpp \
+    ../include/register_variant_t.hpp \
     ../include/utilities.hpp \
     ../include/varlist_definitions.hpp \
     GUITypesNHelpers.hpp \

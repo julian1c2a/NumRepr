@@ -1,0 +1,4 @@
+﻿build-GUI-msys2_mingw64_GCC-Debug/*
+build-GUI-msys2_mingw64_GCC-Profile/*
+build-GUI-msys2_mingw64_GCC-Release/*
+obj/*
